@@ -1,11 +1,6 @@
 
 var kittens = [
 {
-  name: "Poppy",
-  favFood: "chicken",
-  image: "http://66.media.tumblr.com/d1f01bbe0150fda0c40d2151c5eaeac8/tumblr_odlqqskjj61v9cejwo1_400.jpg"
-},
-{
   name: "Boba",
   favFood: "Sock fluff",
   image: "http://66.media.tumblr.com/d1f01bbe0150fda0c40d2151c5eaeac8/tumblr_odlqqskjj61v9cejwo1_400.jpg"
@@ -20,8 +15,11 @@ var kittens = [
   favFood: "Whiskas Temptation",
   image: "http://66.media.tumblr.com/7c5784ea89369c780e782bf10c60315a/tumblr_npb0hlYwhV1u63jaco1_1280.jpg"
 },
-
-
+{
+  name: "Poppy",
+  favFood: "chicken",
+  image: "http://sites.psu.edu/siowfa15/wp-content/uploads/sites/29639/2015/10/cat.jpg"
+},
 ]
 
 var cat = function(name,food,image) {
@@ -77,6 +75,7 @@ var app = function() {
 
   for (var kitten of kittens) {
     console.log("name,food,",kitten.name, kitten.favFood)
+    cats.style.backgroundColor = "tomato"
     cat(kitten.name, kitten.favFood, kitten.image);
   }
 }
