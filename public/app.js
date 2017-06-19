@@ -1,23 +1,23 @@
 
 var kittens = [
 {
-  name: "Boba",
-  favFood: "Sock fluff",
+  name: "Name: Boba",
+  favFood: "Favourite Food : Sock fluff",
   image: "http://66.media.tumblr.com/d1f01bbe0150fda0c40d2151c5eaeac8/tumblr_odlqqskjj61v9cejwo1_400.jpg"
 },
 {
-  name: "Barnaby",
-  favFood: "Tuna",
+  name: "Name: Barnaby",
+  favFood: "Favourite Food: Tuna",
   image: "https://68.media.tumblr.com/88d0fcf2b84a7b098dda839130597569/tumblr_okuo4teiql1uhevdso1_1280.jpg"
 },
 {
-  name: "Max",
-  favFood: "Whiskas Temptation",
+  name: "Name: Max",
+  favFood: "Favourite Food:Whiskas Temptation",
   image: "http://66.media.tumblr.com/7c5784ea89369c780e782bf10c60315a/tumblr_npb0hlYwhV1u63jaco1_1280.jpg"
 },
 {
-  name: "Poppy",
-  favFood: "chicken",
+  name: "Name: Poppy",
+  favFood: "Favourite Food: Chicken",
   image: "http://sites.psu.edu/siowfa15/wp-content/uploads/sites/29639/2015/10/cat.jpg"
 },
 ]
@@ -42,14 +42,14 @@ var createCatUL = function() {
 
 var createCatName = function(name) {
   var liCatName = document.createElement('li');
-  liCatName.innerText = "Name: Patch";
+  liCatName.innerText = name;
   return liCatName;
 }
 
 
 var createCatFavFood = function(food) {  
   var liCatFavFood = document.createElement('li');
-  liCatFavFood.innerText = "Favourite Food: Chicken";
+  liCatFavFood.innerText = food;
   return liCatFavFood;
 }
 
